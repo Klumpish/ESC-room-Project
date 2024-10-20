@@ -244,6 +244,13 @@ header {
   margin-top: 35px;
 }
 
+.grid_2x2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
 .grid_2x2 .picture {
   max-width: 100%;
   height: auto;
@@ -265,22 +272,12 @@ header {
   margin-bottom: 30px;
   width: 440px;
 }
-@media screen and (min-width: 600px) and (max-width: 980px) {
-  .grid_2x2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 920px) {
   .grid_2x2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 800px;
-    margin-bottom: 150px;
+    margin-bottom: 6rem;
   }
 }
 
@@ -339,9 +336,10 @@ a:visited {
 
 /* 1200px
 1280px */
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 760px) {
   body {
-    max-width: 1080px; /* Limit the website width */
+    min-width: 760px;
+    max-width: 1280px; /* Limit the website width */
     margin: 0 auto; /* Center the website content */
   }
   /* header */
