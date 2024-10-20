@@ -6,14 +6,27 @@
 	margin-right: auto;
 	margin-top: 20px;
 	.challengesBtn {
-		display: block;
-		background-color: #8acfe5;
-		border-radius: 5px;
-		border: none;
-		font-size: 1rem;
-		/* size */
-		padding: 1rem 2.1rem;
-	}
+		@include challengesBtn($secondary-color);
+			@include breakpoint($medium-screen){
+			}
+		}
+		.challengesBtn__desktop__orange {
+			display: hide;
+
+
+				@include breakpoint($medium-screen){
+					display: block;
+					background-color: #e3170a;
+					color: white;
+					border-radius: 5px;
+					border: none;
+					font-size: 1rem;
+					/* size */
+					padding: 1rem 2.1rem;
+					margin-left: 20px;
+					font-weight: 700;
+				}
+		}
 	.challengesLink {
 		color: rgba(54, 118, 157, 1);
 		font-size: 0.67rem;
@@ -25,6 +38,12 @@
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 129px;
-	}
+		width: 5.38rem;
+
+			@include breakpoint($medium-screen){
+				display:none;
+				color: black;
+				
+			}
+		}
 }

@@ -2,8 +2,23 @@ $small-screen: 480px;
 $medium-screen: 760px;
 $large-screen: 1280px;
 
+// colors
+$primary-color:#E3170A;
+$secondary-color:#8acfe5;
+$content-color:rgba(1, 24, 39, 1);
+
 @mixin breakpoint($min-size){
 	@media screen and (min-width:$min-size){
 		@content
 	}
+}
+
+@mixin challengesBtn($color){
+	display: block;
+	background-color: $color;
+	border-radius: 5px;
+	border: none;
+	font-size: 1rem;
+	/* size */
+	padding: 1rem 2.1rem;
 }

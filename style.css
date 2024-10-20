@@ -170,6 +170,23 @@ body {
   /* size */
   padding: 1rem 2.1rem;
 }
+.challenges .challengesBtn__desktop__orange {
+  display: hide;
+}
+@media screen and (min-width: 760px) {
+  .challenges .challengesBtn__desktop__orange {
+    display: block;
+    background-color: #e3170a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    /* size */
+    padding: 1rem 2.1rem;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+}
 .challenges .challengesLink {
   color: rgb(54, 118, 157);
   font-size: 0.67rem;
@@ -180,7 +197,13 @@ body {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 129px;
+  width: 5.38rem;
+}
+@media screen and (min-width: 760px) {
+  .challenges .challengesLink {
+    display: none;
+    color: black;
+  }
 }
 
 footer {
@@ -339,7 +362,7 @@ html {
   display: none;
 }
 
-/* img,
+/* img
 div,
 p {
 	max-width: 100%;  Ensure elements don't exceed the body width
@@ -363,31 +386,6 @@ p {
 1280px */
 @media screen and (min-width: 760px) {
   /* header */
-  .challengesBtn__desktop__blue {
-    display: block;
-    /* background-color: #8acfe5;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem; */
-    color: black;
-    /* size */
-    padding: 1rem 2.1rem;
-  }
-  .challengesBtn__desktop__orange {
-    display: block;
-    background-color: #e3170a;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-    /* size */
-    padding: 1rem 2.1rem;
-    margin-left: 20px;
-    font-weight: 700;
-  }
-  .challengesLink.challengesLink.hide__element {
-    display: none;
-  }
   /* img and button */
   .hackerImg {
     position: relative;
