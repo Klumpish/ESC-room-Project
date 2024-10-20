@@ -20,4 +20,17 @@
 		font-weight: 400;
 		margin-top: 0;
 	}
+	.quoteFace {
+		@include breakpoint($medium-screen){
+
+			display: block;
+			
+		}
+	}
+	@include breakpoint($medium-screen){
+		// .quote {
+		// 	display: flex;
+		// 	justify-content: center;
+		// }
+	}
 }

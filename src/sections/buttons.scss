@@ -5,45 +5,73 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
-	.challengesBtn {
+		.challengesBtn {
 		@include challengesBtn($secondary-color);
-			@include breakpoint($medium-screen){
+			// .challengesBtn
+		@include breakpoint($medium-screen){
+		
 			}
 		}
 		.challengesBtn__desktop__orange {
 			display: hide;
 
-
-				@include breakpoint($medium-screen){
-					display: block;
-					background-color: #e3170a;
-					color: white;
-					border-radius: 5px;
-					border: none;
-					font-size: 1rem;
-					/* size */
-					padding: 1rem 2.1rem;
-					margin-left: 20px;
-					font-weight: 700;
-				}
+			// .challengesBtn__desktop--orange
+			@include breakpoint($medium-screen){
+				display: block;
+				background-color: #e3170a;
+				color: white;
+				border-radius: 5px;
+				border: none;
+				font-size: 1rem;
+				/* size */
+				padding: 1rem 2.1rem;
+				margin-left: 20px;
+				font-weight: 700;
+			}
 		}
-	.challengesLink {
-		color: rgba(54, 118, 157, 1);
-		font-size: 0.67rem;
-		margin-bottom: 30px;
-		margin-top: 30;
-	
-		/* center */
-		display: block;
-		margin-top: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 5.38rem;
+		.challengesLink {
+			color: rgba(54, 118, 157, 1);
+			font-size: 0.67rem;
+			margin-bottom: 30px;
+			margin-top: 30;
+		
+			/* center */
+			display: block;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 5.38rem;
 
+			// .challengesLink
 			@include breakpoint($medium-screen){
 				display:none;
 				color: black;
-				
+					
 			}
 		}
+		// .challenges
+		@include breakpoint($medium-screen){
+		}
+	}
+	
+.challenges.challengesBtn_img {
+	display: hide;
+	@include breakpoint($medium-screen){
+
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin: 0;
+		transform: translateY(-40px);
+		gap: 20px;
+	}
+}
+.challenges.challengeBtn__sidebyside {
+	@include breakpoint($medium-screen){
+
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		margin: 60px;
+	}
 }
