@@ -1,4 +1,5 @@
-/* parent */
+@use 'lib.scss' as *;
+
 header {
 	background-color: rgba(1, 24, 39, 1);
 }
@@ -7,6 +8,7 @@ header {
 	display: flex;
 	height: 144px;
 	width: 100%;
+    
 	img {
 		float: left;
 		margin-top: 26px;
@@ -31,4 +33,30 @@ header {
 			
 		}
 	}
+    @include breakpoint($medium-screen){
+        height: 216px;
+
+        .logoText {
+            width: auto;
+            font-size: 1.67rem;
+            padding-top: 50px;
+        }
+
+        
+    }
+}
+
+.nav{
+    display:none;
+
+    @include breakpoint($medium-screen){
+            display: flex;
+            align-items: end;
+            color: white;
+            justify-content: space-evenly;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            width: 100%;
+        
+    }
 }

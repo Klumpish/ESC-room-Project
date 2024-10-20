@@ -1,4 +1,3 @@
-/* parent */
 header {
   background-color: rgb(1, 24, 39);
 }
@@ -33,44 +32,127 @@ header {
     width: auto;
   }
 }
-
-* {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
-  max-width: 100%;
+@media screen and (min-width: 760px) {
+  .header {
+    height: 216px;
+  }
+  .header .logoText {
+    width: auto;
+    font-size: 1.67rem;
+    padding-top: 50px;
+  }
 }
 
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-/* hide elements in mobile view */
-.onDesktop__hide {
+.nav {
   display: none;
 }
-
-.hideOnMobile {
-  display: none;
+@media screen and (min-width: 760px) {
+  .nav {
+    display: flex;
+    align-items: end;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+  }
 }
 
-/* img,
-div,
-p {
-	max-width: 100%;  Ensure elements don't exceed the body width 
-} 
-*/
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  /* width: 480px;
-  overflow-x: hidden; */
+}
+@media screen and (min-width: 760px) {
+  body body {
+    min-width: 760px;
+    max-width: 1280px; /* Limit the website width */
+    margin: 0 auto; /* Center the website content */
+  }
 }
 
-.hackerImg img {
+.mobile__hide {
+  display: none;
+}
+
+.hackerBio {
+  /* center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+  background-color: rgb(1, 24, 39);
+  color: rgb(255, 255, 255);
   width: 100%;
+  font-size: 1.17rem;
+  font-weight: 400;
+}
+.hackerBio span {
+  width: 440px;
+}
+.hackerBio .hackerBioBtn {
+  width: 13rem;
+  height: 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: rgb(138, 207, 229);
+  border: 2px solid rgb(138, 207, 229);
+  margin-top: 35px;
+}
+
+.grid_2x2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.grid_2x2 .picture {
+  max-width: 100%;
+  height: auto;
+}
+.grid_2x2 .infoDump {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 3rem;
+}
+.grid_2x2 .infoDump span {
+  font-size: 1.33rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  display: block;
+  width: 440px;
+}
+.grid_2x2 .infoDump p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  width: 440px;
+}
+.grid_2x2 .infoDump .infoBtn {
+  /* size */
+  background-color: rgb(227, 23, 10);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: none;
+  padding: 1rem 2.29rem;
+  margin-top: 1rem;
+  /* font */
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+@media screen and (min-width: 920px) {
+  .grid_2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 6rem;
+  }
 }
 
 /* parent */
@@ -101,7 +183,44 @@ body {
   width: 129px;
 }
 
-/* parent */
+footer {
+  background-color: rgb(1, 24, 39);
+  height: 566px;
+  padding-left: 22px;
+  padding-top: 22px;
+  /* font */
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+footer p {
+  font-weight: 400;
+  width: 440px;
+  font-size: 18px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  /* font */
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
 .quote {
   display: flex;
   justify-content: center;
@@ -124,16 +243,6 @@ body {
   margin-top: 0;
 }
 
-/*  */
-.header2 {
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.33rem;
-  font-weight: 400;
-}
-
-/* parent scroll */
 .containerScroll {
   /*  */
   height: 480px;
@@ -214,153 +323,46 @@ body {
   border: none;
 }
 
-.hackerBio {
-  /* center */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  text-align: center;
-  background-color: rgb(1, 24, 39);
-  color: rgb(255, 255, 255);
-  width: 100%;
-  font-size: 1.17rem;
-  font-weight: 400;
-}
-.hackerBio span {
-  width: 440px;
-}
-.hackerBio .hackerBioBtn {
-  width: 13rem;
-  height: 3rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  background-color: transparent;
-  color: rgb(138, 207, 229);
-  border: 2px solid rgb(138, 207, 229);
-  margin-top: 35px;
-}
-
-.grid_2x2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-.grid_2x2 .picture {
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
   max-width: 100%;
-  height: auto;
-}
-.grid_2x2 .infoDump {
-  padding-top: 20px;
-  padding-left: 20px;
-  margin-bottom: 3rem;
-}
-.grid_2x2 .infoDump span {
-  font-size: 1.33rem;
-  font-family: "Roboto";
-  font-weight: 700;
-  display: block;
-  width: 440px;
-}
-.grid_2x2 .infoDump p {
-  font-size: 1rem;
-  margin-bottom: 30px;
-  width: 440px;
-}
-@media screen and (min-width: 920px) {
-  .grid_2x2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 6rem;
-  }
 }
 
-/* booking */
-.infoBtn {
-  /* size */
-  background-color: rgb(227, 23, 10);
-  color: rgb(255, 255, 255);
-  border-radius: 4px;
-  border: none;
-  padding: 1rem 2.29rem;
-  margin-top: 1rem;
-  /* font */
+html {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-weight: 700;
-  font-family: "Roboto";
-}
-
-footer {
-  background-color: rgb(1, 24, 39);
-  height: 566px;
-  padding-left: 22px;
-  padding-top: 22px;
-  /* font */
-  font-family: "Roboto";
-  color: rgb(255, 255, 255);
-}
-footer h3 {
-  font-weight: 700;
-  font-size: 18px;
-}
-footer p {
   font-weight: 400;
-  width: 440px;
-  font-size: 18px;
 }
-footer ul {
-  list-style-type: none;
-  padding: 0;
+
+.hideOnMobile {
+  display: none;
 }
-footer ul li {
-  /* font */
-  font-size: 18px;
+
+/* img,
+div,
+p {
+	max-width: 100%;  Ensure elements don't exceed the body width
+}
+*/
+.hackerImg img {
+  width: 100%;
+}
+
+/*  */
+.header2 {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.33rem;
   font-weight: 400;
-  font-family: "Roboto";
 }
 
-a:link {
-  color: white;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-}
-
+/* parent scroll */
 /* 1200px
 1280px */
 @media screen and (min-width: 760px) {
-  body {
-    min-width: 760px;
-    max-width: 1280px; /* Limit the website width */
-    margin: 0 auto; /* Center the website content */
-  }
   /* header */
-  .nav {
-    display: flex;
-    align-items: end;
-    color: white;
-    justify-content: space-evenly;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  .logoText {
-    width: auto;
-    font-size: 1.67rem;
-    padding-top: 50px;
-  }
-  .header {
-    height: 216px;
-  }
-  /*challangebtn  */
   .challengesBtn__desktop__blue {
     display: block;
     /* background-color: #8acfe5;
