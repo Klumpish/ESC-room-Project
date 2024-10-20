@@ -1,38 +1,3 @@
-* {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
-  max-width: 100%;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-/* hide elements in mobile view */
-.onDesktop__hide {
-  display: none;
-}
-
-.hideOnMobile {
-  display: none;
-}
-
-/* img,
-div,
-p {
-	max-width: 100%;  Ensure elements don't exceed the body width 
-} 
-*/
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  /* width: 480px;
-  overflow-x: hidden; */
-}
-
 /* parent */
 header {
   background-color: rgb(1, 24, 39);
@@ -67,6 +32,41 @@ header {
     padding-top: 50px;
     width: auto;
   }
+}
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+  max-width: 100%;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* hide elements in mobile view */
+.onDesktop__hide {
+  display: none;
+}
+
+.hideOnMobile {
+  display: none;
+}
+
+/* img,
+div,
+p {
+	max-width: 100%;  Ensure elements don't exceed the body width 
+} 
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* width: 480px;
+  overflow-x: hidden; */
 }
 
 .hackerImg img {

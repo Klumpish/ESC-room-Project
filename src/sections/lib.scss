@@ -1,0 +1,9 @@
+$small-screen: 480px;
+$medium-screen: 760px;
+$large-screen: 1280px;
+
+@mixin breakpoint($min-size){
+	@media screen and (min-width:$min-size){
+		@content
+	}
+}
