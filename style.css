@@ -119,6 +119,7 @@ body {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 .grid_2x2 .picture {
   max-width: 100%;
@@ -133,18 +134,35 @@ body {
   padding-top: 20px;
   padding-left: 20px;
   margin-bottom: 3rem;
+  width: 480px;
 }
-.grid_2x2 .infoDump span {
+.grid_2x2 .infoDump h3 {
   font-size: 1.33rem;
   font-family: "Roboto";
   font-weight: 700;
   display: block;
   width: 440px;
 }
+@media screen and (min-width: 760px) {
+  .grid_2x2 .infoDump h3 {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 420px;
+  }
+}
 .grid_2x2 .infoDump p {
   font-size: 1rem;
   margin-bottom: 30px;
   width: 440px;
+}
+@media screen and (min-width: 760px) {
+  .grid_2x2 .infoDump p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 420px;
+  }
 }
 .grid_2x2 .infoDump .infoBtn {
   /* size */
@@ -158,6 +176,11 @@ body {
   font-size: 24px;
   font-weight: 700;
   font-family: "Roboto";
+}
+@media screen and (min-width: 760px) {
+  .grid_2x2 .infoDump .infoBtn {
+    margin-left: 6%;
+  }
 }
 @media screen and (min-width: 760px) {
   .grid_2x2 {
@@ -174,6 +197,22 @@ body {
     grid-column: 2;
     grid-row: 1;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid_2x2 .col3 {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid_2x2 .col4,
+  .grid_2x2 .col4 .hackerThinking {
+    grid-column: 2;
+    grid-row: 2;
+    /*  */
+    height: 450px;
   }
 }
 
@@ -277,6 +316,24 @@ footer ul li {
   font-size: 18px;
   font-weight: 400;
   font-family: "Roboto";
+}
+@media screen and (min-width: 760px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  footer .footerInfo {
+    width: 420px;
+    margin-right: 50px;
+    margin-top: 10%;
+  }
+  footer .footerInfo h3,
+  footer .footerInfo p {
+    padding: 0;
+    margin: 0;
+    width: 440px;
+  }
 }
 
 a:link {
@@ -437,71 +494,6 @@ p {
 /* parent scroll */
 /* 1200px
 1280px */
-@media screen and (min-width: 760px) {
-  /* img and button */
-  /* img and button end. */
-  /*  */
-  /*  */
-  /* challengeBtn_sidebyside */
-  /*  */
-  /* grid2x2 */
-  .col2 {
-    grid-column: 2;
-    grid-row: 1;
-    padding: 0;
-  }
-  .col2 p,
-  .col3 p {
-    margin-right: auto;
-    margin-left: auto;
-    width: 420px;
-  }
-  .col2 span,
-  .col3 span {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    width: 420px;
-  }
-  .col2 .infoBtn,
-  .col3 .infoBtn {
-    margin-left: 105px;
-  }
-  .col3 {
-    grid-column: 1;
-    grid-row: 2;
-    padding: 0;
-    /*  */
-  }
-  .col4,
-  .col4 .hackerThinking {
-    grid-column: 2;
-    grid-row: 2;
-    /*  */
-    height: 450px;
-  }
-  /* footer */
-  footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    height: 470px;
-    /*  */
-    max-height: 470px;
-  }
-  .footerInfo {
-    width: 420px;
-    margin-right: 50px;
-    margin-top: 10%;
-  }
-  .footerInfo h3,
-  .footerInfo p {
-    padding: 0;
-    margin: 0;
-    width: 440px;
-  }
-}
 @media screen and (min-width: 1330px) {
   html {
     display: grid;
@@ -520,10 +512,6 @@ p {
   }
   .containerScroll::-webkit-scrollbar {
     display: none;
-  }
-  .col2 .infoBtn,
-  .col3 .infoBtn {
-    margin-left: 148px;
   }
 }
 /* 400 */

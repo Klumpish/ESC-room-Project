@@ -66,6 +66,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	flex-wrap: wrap;
+	align-items: center;
 
 	.picture {
 		max-width: 100%;
@@ -81,17 +82,32 @@ body {
 		padding-top: 20px;
 		padding-left: 20px;
 		margin-bottom: 3rem;
-		span {
+		width: 480px;
+		h3 {
 			font-size: 1.33rem;
 			font-family: "Roboto";
 			font-weight: 700;
 			display: block;
 			width: 440px;
+			
+			@include breakpoint($medium-screen){
+				display: flex;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 30px;
+				width: 420px;
+			}
 		}
 			p {
 				font-size: 1rem;
 				margin-bottom: 30px;
 				width: 440px;
+
+				@include breakpoint($medium-screen){
+					margin-right: auto;
+					margin-left: auto;
+					width: 420px;
+				}
 			}
         .infoBtn {
             /* size */
@@ -107,6 +123,10 @@ body {
             font-size: 24px;
             font-weight: 700;
             font-family: "Roboto";
+
+			@include breakpoint($medium-screen){
+				margin-left: 6%;
+			}
         }
 	}
 	// 920px
@@ -124,13 +144,28 @@ body {
 			grid-column: 2;
 			grid-row: 1;
 			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
 		}
+
 		.col3{
-
+			grid-column: 1;
+			grid-row: 2;
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto
+			
 		}
-		.col4{
-
+		.col4,
+		.col4 .hackerThinking {
+			grid-column: 2;
+			grid-row: 2;
+			/*  */
+			height: 450px;
+			// object-fit: cover;
 		}
+
+		
 	}
 
 
