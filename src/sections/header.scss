@@ -4,12 +4,12 @@ header {
 	background-color: rgba(1, 24, 39, 1);
 }
 
-.header {
+.header__logo-container {
 	display: flex;
 	height: 144px;
 	width: 100%;
     
-	img {
+	.header__logo {
 		float: left;
 		margin-top: 26px;
 		margin-left: 27px;
@@ -17,7 +17,7 @@ header {
 		width: 128px;
 		height: 82px;
 	}
-	.logoText {
+	.header__title {
 		color: white;
 		width: 78px;
 		height: 84px;
@@ -27,27 +27,25 @@ header {
 		font-size: 1rem;
 		margin-left: 10px;
 		margin-top: 25px;
-		@media screen and (min-width:980px) {
+		@include breakpoint($medium-screen){
 			padding-top: 50px;;
 			width: auto;
-			
+			font-size: 1.67rem;
 		}
 	}
     @include breakpoint($medium-screen){
         height: 216px;
 
-        .logoText {
-            width: auto;
-            font-size: 1.67rem;
-            padding-top: 50px;
-        }
 
         
     }
 }
 
-.nav{
+.header__nav{
     display:none;
+	.header__nav-link:hover{
+		color:rgba(138, 207, 229, 1);
+	}
 
     @include breakpoint($medium-screen){
             display: flex;
@@ -55,7 +53,7 @@ header {
             color: white;
             justify-content: space-evenly;
             font-size: 1rem;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             width: 100%;
         
     }

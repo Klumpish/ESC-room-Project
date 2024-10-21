@@ -1,6 +1,6 @@
 @use 'lib.scss' as *;
 
-.quote {
+.quotes {
 	display: flex;
 	justify-content: center;
 	img {
@@ -9,18 +9,18 @@
 		margin-left: 21px;
 		padding: 0 20px 80px 0;
 	}
-	.quoteText {
+	.quote__text {
 		font-size: 1rem;
 		margin-right: 24px;
 		margin-bottom: 10px;
 		max-width: 440px;
 	}
-	.quoteVisit {
+	.quote__author {
 		font-size: 0.75rem;
 		font-weight: 400;
 		margin-top: 0;
 	}
-	.quoteFace {
+	.quote {
 		@include breakpoint($medium-screen){
 
 			display: block;
