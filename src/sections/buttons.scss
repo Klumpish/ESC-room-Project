@@ -7,6 +7,7 @@
 	margin-top: 20px;
 		.challenges__btn {
 		@include challengesBtn($secondary-color);
+			color:black;
 			// challenges__btn
 		@include breakpoint($medium-screen){
 		
