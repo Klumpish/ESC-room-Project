@@ -151,7 +151,6 @@ body .section-title {
   padding-top: 20px;
   padding-left: 20px;
   margin-bottom: 3rem;
-  width: 480px;
 }
 .info-grid .info-grid__item--text h3 {
   font-size: 1.33rem;
@@ -195,7 +194,12 @@ body .section-title {
 }
 @media screen and (min-width: 760px) {
   .info-grid .info-grid__item--text .info-grid__btn {
-    margin-left: 6%;
+    margin-left: 4%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .info-grid .info-grid__item--text .info-grid__btn {
+    margin-left: 16%;
   }
 }
 @media screen and (min-width: 760px) {
@@ -476,7 +480,7 @@ html {
 @media screen and (min-width: 1280px) {
   html {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 1480px) 1fr;
+    grid-template-columns: 1fr minmax(auto, 1280px) 1fr;
     background-color: rgb(1, 24, 39);
     min-height: 100vh;
   }

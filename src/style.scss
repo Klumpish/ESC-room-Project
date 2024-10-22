@@ -22,7 +22,7 @@ html {
 	}
 	@include breakpoint($large-screen){
 		display: grid;
-		grid-template-columns: 1fr minmax(auto, 1480px) 1fr;
+		grid-template-columns: 1fr minmax(auto, 1280px) 1fr;
 		background-color: rgba(1, 24, 39, 1);
 		min-height: 100vh;
 
