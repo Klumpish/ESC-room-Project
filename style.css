@@ -99,6 +99,7 @@ body .section-title {
   align-items: center;
   height: 500px;
   text-align: center;
+  margin-top: 1.04rem;
   background-color: rgb(1, 24, 39);
   color: rgb(255, 255, 255);
   width: 100%;
@@ -377,6 +378,7 @@ a:visited {
   overflow-y: hidden;
   gap: 1px;
   margin-left: 20px;
+  margin-bottom: 1.25rem;
   /* card */
   /* card img */
   /* card text */
@@ -387,7 +389,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   width: 15.13rem;
-  height: 446px;
+  height: 18.58rem;
   flex-shrink: 0;
   margin: 20px 20px 20px 10px;
   border-radius: 8px;

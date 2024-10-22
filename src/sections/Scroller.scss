@@ -3,20 +3,19 @@
 .scroll-container {
 	/*  */
 	height: 20rem;
-	// height: 480px;
 	display: flex;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	gap: 1px;
 	margin-left: 20px;
+	margin-bottom: 1.25rem;
 	/* card */
 	.scroll-card {
 		background-color: white;
 		display: flex;
 		flex-direction: column;
 		width: 15.13rem;
-		// width: 363px;
-		height: 446px;
+		height: 18.58rem;
 	
 		flex-shrink: 0;
 		margin: 20px 20px 20px 10px;
@@ -48,13 +47,10 @@
 		img {
 			width: 0.63rem;
 			height: 0.63rem;
-			// width: 15px;
-			// height: 15px;
 		}
 		p {
 			margin-top: 0;
 			padding-left: 0.42rem;
-			// padding-left: 10px;
 			font-size: 0.69rem;
 			font-weight: 400;
 			@include breakpoint($medium-screen){
@@ -68,8 +64,6 @@
 		font-weight: 400;
 		padding-left: 0.63rem;
 		padding-right: 0.63rem;
-		// padding-left: 15px;
-		// padding-right: 15px;
 		padding-bottom: 5px;
 		margin-left: auto;
 		margin-right: auto;
