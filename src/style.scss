@@ -32,6 +32,19 @@ html {
 .hideOnMobile {
 	display: none;
 }
+.mobile__hide{
+	display: none;
+	@include breakpoint($medium-screen){
+	display:block
+	}
+}
+
+.desktop__hide{
+	display: block;
+	@include breakpoint($medium-screen){
+		display:none
+	}
+}
 
 /* img
 div,

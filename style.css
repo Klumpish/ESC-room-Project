@@ -490,6 +490,24 @@ html {
   display: none;
 }
 
+.mobile__hide {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .mobile__hide {
+    display: block;
+  }
+}
+
+.desktop__hide {
+  display: block;
+}
+@media screen and (min-width: 760px) {
+  .desktop__hide {
+    display: none;
+  }
+}
+
 /* img
 div,
 p {
