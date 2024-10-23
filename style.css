@@ -486,10 +486,6 @@ html {
   }
 }
 
-.hideOnMobile {
-  display: none;
-}
-
 .mobile__hide {
   display: none;
 }
