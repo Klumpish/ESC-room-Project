@@ -22,16 +22,10 @@
 		margin-left: 20%;
 	}
 	.quote {
-		@include breakpoint($medium-screen){
 
+		@include breakpoint($medium-screen){
 			display: block;
 			
 		}
-	}
-	@include breakpoint($medium-screen){
-		// .quote {
-		// 	display: flex;
-		// 	justify-content: center;
-		// }
 	}
 }

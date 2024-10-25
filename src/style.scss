@@ -8,18 +8,13 @@
 
 * {
 	box-sizing: border-box;
-	/* outline: 1px solid red; */
 	max-width: 100%;
 }
 html {
 	font-family: "Roboto", sans-serif;
 	font-size: clamp(18px,4vw,24px);
-	// font-size: 18px;
 	font-weight: 400;
-	@include breakpoint($medium-screen){
-		// font-size: 24px;
-		
-	}
+
 	@include breakpoint($large-screen){
 		display: grid;
 		grid-template-columns: 1fr minmax(auto, 1280px) 1fr;
@@ -28,7 +23,6 @@ html {
 
 	}
 }
-
 
 .mobile__hide{
 	display: none;
@@ -44,44 +38,10 @@ html {
 	}
 }
 
-/* img
-div,
-p {
-	max-width: 100%;  Ensure elements don't exceed the body width
-}
-*/
-
 .main-image img {
 	width: 100%;
 }
 
-
-/*  */
-// .header2 {
-// 	margin-top: 40px;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	font-size: 1.33rem;
-// 	font-weight: 400;
-// }
-
-/* parent scroll */
-
-
-
-/* 1200px
-1280px */
-
-
-@media screen and (min-width: 1330px) {
-
-
-	// .containerScroll::-webkit-scrollbar {
-	// 	display: none;
-	// }
-}
-
-/* 400 */
 /* text Styles */
 .roboto-bold {
 	font-family: "Roboto", sans-serif;

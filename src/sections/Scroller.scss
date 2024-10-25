@@ -1,7 +1,6 @@
 @use 'lib.scss' as *;
 
 .scroll-container {
-	/*  */
 	height: 20rem;
 	display: flex;
 	overflow-x: scroll;
@@ -9,36 +8,34 @@
 	gap: 1px;
 	margin-left: 20px;
 	margin-bottom: 1.25rem;
-	/* card */
+
 	.scroll-card {
 		background-color: white;
 		display: flex;
 		flex-direction: column;
 		width: 15.13rem;
 		height: 18.58rem;
-	
 		flex-shrink: 0;
 		margin: 20px 20px 20px 10px;
 		border-radius: 8px;
 		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 	}
-	/* card img */
+
 	img {
 		width: 100%;
 		border-top-left-radius: 8px;
 		border-top-right-radius: 8px;
 	}
-	/* card text */
+
 	.scroll-card__title {
 		font-size: 1.17rem;
 		font-weight: 400;
-	
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-left: 15px;
 		padding-bottom: 0;
 	}
-	/* cardStars */
+
 	.scroll-card__stars {
 		display: flex;
 		margin-left: 18px;
@@ -74,18 +71,14 @@
 		justify-content: flex-end;
 
 		.scroll-card__btn {
-			background-color: rgba(227, 23, 10, 1);
+			background-color: $primary-color__button;
 			color: rgba(255, 255, 255, 1);
 			font-size: 0.67rem;
 			font-family: "Roboto";
 			font-weight: 700;
-		
 			padding: 1em 2em;
-		
 			border-radius: 0.33rem;
-			// border-radius: 8px;
 			margin-right: 0.83rem;
-			// margin-right: 20px;
 			margin-bottom: 0.42rem;
 			margin-top: 0.50rem;
 			border: none;

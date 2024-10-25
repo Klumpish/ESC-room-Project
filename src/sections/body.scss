@@ -4,7 +4,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	// 412x915px
 
 	.section-title {
 		margin-top: 40px;
@@ -13,16 +12,15 @@ body {
 		font-size: 1.33rem;
 		font-weight: 400;
 	}
-	@include breakpoint($medium-screen){
 
+	@include breakpoint($medium-screen){
 		min-width: 760px;
-		max-width: 980px; /* Limit the website width */
-		margin: 0 auto; /* Center the website content */
+		max-width: 980px;
+		margin: 0 auto;
 
 		.section-title {
 			font-size: 1.5rem;
 		}
-		
 	}
 	@include breakpoint($large-screen){
 		grid-column: 2;
@@ -30,12 +28,12 @@ body {
 		max-width: 1480px;
 	}
 }
+
 .mobile__hide{
     display:none
 }
 
 .hacker-bio {
-	/* center */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -43,11 +41,9 @@ body {
 	height: 500px;
 	text-align: center;
 	margin-top: 1.04rem;
-
 	background-color: rgba(1, 24, 39, 1);
 	color: rgba(255, 255, 255, 1);
 	width: 100%;
-
 	font-size: 1.17rem;
 	font-weight: 400;
 
@@ -61,7 +57,6 @@ body {
 	.hacker-bio__btn {
 		width: 13rem;
 		height: 3rem;
-	
 		border-radius: 4px;
 		cursor: pointer;
 		font-size: 1rem;
@@ -73,7 +68,6 @@ body {
 	}
 }
 
-// body__grid
 .info-grid{
 	display: flex;
 	flex-direction: column;
@@ -85,10 +79,9 @@ body {
 	.info-grid__item--image {
 		max-width: 100%;
 		height: auto;
-		@include breakpoint($medium-screen){
 
+		@include breakpoint($medium-screen){
 			.info-grid__img{
-				
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
@@ -100,7 +93,7 @@ body {
 		padding-top: 20px;
 		padding-left: 20px;
 		margin-bottom: 3rem;
-		// width: 480px;
+
 		h3 {
 			font-size: 1.33rem;
 			font-family: "Roboto";
@@ -134,7 +127,6 @@ body {
             border: none;
             padding: 1rem 2.29rem;
             margin-top: 1rem;
-            /* font */
             font-size: 24px;
             font-weight: 700;
             font-family: "Roboto";
@@ -147,12 +139,10 @@ body {
 			}
         }
 	}
-	// 920px
 	@include breakpoint($medium-screen){
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto auto;
-		// grid-template-rows: repeat(2, 1fr);
 		margin-bottom: 6rem;
 		align-items: stretch;
 
@@ -160,9 +150,6 @@ body {
 			grid-column: 2;
 			grid-row: 2;
 		}
-
 		
 	}
-
-
 }

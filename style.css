@@ -72,8 +72,8 @@ body .section-title {
 @media screen and (min-width: 760px) {
   body {
     min-width: 760px;
-    max-width: 980px; /* Limit the website width */
-    margin: 0 auto; /* Center the website content */
+    max-width: 980px;
+    margin: 0 auto;
   }
   body .section-title {
     font-size: 1.5rem;
@@ -92,7 +92,6 @@ body .section-title {
 }
 
 .hacker-bio {
-  /* center */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,7 +186,6 @@ body .section-title {
   border: none;
   padding: 1rem 2.29rem;
   margin-top: 1rem;
-  /* font */
   font-size: 24px;
   font-weight: 700;
   font-family: "Roboto";
@@ -228,7 +226,6 @@ body .section-title {
   border-radius: 5px;
   border: none;
   font-size: 1rem;
-  /* size */
   padding: 1rem 2.1rem;
   color: black;
 }
@@ -238,12 +235,11 @@ body .section-title {
 @media screen and (min-width: 760px) {
   .challenges .challenges__btn--orange {
     display: block;
-    background-color: #e3170a;
+    background-color: #E3170A;
     color: white;
     border-radius: 5px;
     border: none;
     font-size: 1rem;
-    /* size */
     padding: 1rem 2.1rem;
     margin-left: 20px;
     font-weight: 700;
@@ -254,7 +250,6 @@ body .section-title {
   font-size: 0.67rem;
   margin-bottom: 30px;
   margin-top: 30;
-  /* center */
   display: block;
   margin-top: 20px;
   margin-left: auto;
@@ -267,6 +262,7 @@ body .section-title {
     color: black;
   }
 }
+
 .challenges.challengesBtn_img {
   display: hide;
 }
@@ -374,8 +370,8 @@ a:visited {
     display: block;
   }
 }
+
 .scroll-container {
-  /*  */
   height: 20rem;
   display: flex;
   overflow-x: scroll;
@@ -383,10 +379,6 @@ a:visited {
   gap: 1px;
   margin-left: 20px;
   margin-bottom: 1.25rem;
-  /* card */
-  /* card img */
-  /* card text */
-  /* cardStars */
 }
 .scroll-container .scroll-card {
   background-color: white;
@@ -447,7 +439,7 @@ a:visited {
   justify-content: flex-end;
 }
 .scroll-container .cardBtnDiv .scroll-card__btn {
-  background-color: rgb(227, 23, 10);
+  background-color: #E3170A;
   color: rgb(255, 255, 255);
   font-size: 0.67rem;
   font-family: "Roboto";
@@ -468,7 +460,6 @@ a:visited {
 
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
   max-width: 100%;
 }
 
@@ -504,21 +495,10 @@ html {
   }
 }
 
-/* img
-div,
-p {
-	max-width: 100%;  Ensure elements don't exceed the body width
-}
-*/
 .main-image img {
   width: 100%;
 }
 
-/*  */
-/* parent scroll */
-/* 1200px
-1280px */
-/* 400 */
 /* text Styles */
 .roboto-bold {
   font-family: "Roboto", sans-serif;
