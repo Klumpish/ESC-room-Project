@@ -1,7 +1,8 @@
 @use 'lib.scss' as *;
 
 header {
-	background-color: rgba(1, 24, 39, 1);
+	background-color: $content-color;
+
 	// 
 	position: relative;
 
@@ -44,13 +45,14 @@ header {
     }
 }
 
-.header__nav{
+.header__nav {
     display:none;
 	.header__nav-link:hover{
 		color:rgba(138, 207, 229, 1);
 	}
 
     @include breakpoint($medium-screen){
+			
             display: flex;
             align-items: end;
             color: white;
@@ -79,4 +81,97 @@ header {
 	@include breakpoint($medium-screen){
 		display:none
 	}
+}
+.menu__nav.active{
+	display:none
+}
+
+.menu__overlay {
+    position: fixed;
+    top: 5%;
+	left: 5%;
+    width: 90%;
+    height: 94%;
+    background-color: $content-color;
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+
+	/* Hidden and faded out initially */
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 1.3s ease, transform 1.3s ease 1.2s; /* Slight delay for pop-up effect */
+
+
+	.header__nav-link{
+		margin: 20px;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	@include breakpoint($medium-screen){
+		display: none;
+	}
+}
+.menu__overlay.active {
+    display: flex;
+	// 
+	opacity: 1;
+    transform: scale(1); /* Pop-up animation */
+}
+.close-btn.active{
+	display:block
+}
+.no-scroll {
+    overflow: hidden;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 4%;
+    font-size: 2rem;
+	font-weight: bold;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+	display: none;
+}
+
+.active{
+	@include breakpoint($medium-screen){
+		display: none;
+	}
+}
+
+// animations
+
+/* Dim the background */
+.dim-background {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.background-dim{
+	/* Dim background layer */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(217 217 217 / 50%); /* Adjust opacity as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+	/* Layer below the menu */
+    z-index: 999; 
+	/* Allows clicks to pass through when hidden */
+    pointer-events: none; 
+}
+.background-dim.active {
+    opacity: 1;
+    pointer-events: auto;
 }
