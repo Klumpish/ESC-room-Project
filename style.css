@@ -1,5 +1,6 @@
 header {
   background-color: rgb(1, 24, 39);
+  position: relative;
 }
 
 .header__logo-container {
@@ -54,6 +55,22 @@ header {
     font-size: 1rem;
     margin-bottom: 25px;
     width: 100%;
+  }
+}
+
+.menu__nav {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+@media screen and (min-width: 760px) {
+  .menu__nav {
+    display: none;
   }
 }
 

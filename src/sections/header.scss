@@ -2,6 +2,9 @@
 
 header {
 	background-color: rgba(1, 24, 39, 1);
+	// 
+	position: relative;
+
 }
 
 .header__logo-container {
@@ -57,4 +60,23 @@ header {
             width: 100%;
         
     }
+}
+
+.menu__nav{
+	font-size: 2rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	// display: flex;
+	color: white;
+	// margin-top: 20px;
+	// margin-left: ;
+	// margin-right: 20px;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	@include breakpoint($medium-screen){
+		display:none
+	}
 }
