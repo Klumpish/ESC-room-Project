@@ -27,6 +27,7 @@ function viewPorthandling() {
 	if (window.innerWidth > 760) {
 		header__nav.classList.remove("menu__overlay");
 		header__nav.classList.remove("active");
+		document.body.classList.remove("no-scroll");
 		document.querySelector(".background-dim").classList.remove("active");
 		document.querySelector(".menu__nav").classList.remove("active");
 		document.querySelector(".close-btn").classList.remove("active");

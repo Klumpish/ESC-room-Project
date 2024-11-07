@@ -94,7 +94,9 @@ header {
     height: 94%;
     background-color: $content-color;
     color: #fff;
-    display: none;
+	// 
+    display: flex;
+	// 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -102,9 +104,10 @@ header {
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
 
 	/* Hidden and faded out initially */
-    opacity: 0;
-    transform: scale(0.1);
-    transition: opacity 1.3s ease, transform 1.3s ease 1.2s; /* Slight delay for pop-up effect */
+	visibility: hidden;
+	opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease .1s; /* Slight delay for pop-up effect */
 
 
 	.header__nav-link{
@@ -117,8 +120,9 @@ header {
 	}
 }
 .menu__overlay.active {
-    display: flex;
+    // display: flex;
 	// 
+	visibility: visible;
 	opacity: 1;
     transform: scale(1); /* Pop-up animation */
 }
